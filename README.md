@@ -23,3 +23,6 @@ Drag the DTCoreText folder into your project.  If you have enabled ARC, then DTC
 
 (Side Note: DTCoreText depends on ARC.  I don't like ARC, so I've just enabled it for the files in DTCoreText in the demo project.)
 
+##License##
+This code is released under the BSD license.  You can use it in commercial and non-commercial code with attribution.
+
