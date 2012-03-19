@@ -1,4 +1,5 @@
 #OCPDFGen#
+Welcome to OCPDFGen.  This is a library that was created by Mobile World Software in the creation of our own products.  We hope you enjoy it.
 
 ##What it does##
 This very basic library allows developers to create well-formatted text PDF files on iOS devices from CSS-formatted HTML.  The HTML is parsed using the excellent DTCoreText framework from Cocoanetics, which then turns the HTML string into an NSAttributedString.  A CoreText formatter is used to format the text onto pages, and full pagination support is enabled.
