@@ -7,12 +7,37 @@
 //
 
 #import "OCViewController.h"
+#import "OCPDFGenerator.h"
 
 @interface OCViewController ()
 
 @end
 
 @implementation OCViewController
+
+
+- (void)loadView {
+    [super loadView];
+    
+    
+    
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    NSString *readmePath = [[NSBundle mainBundle] pathForResource:@"test.html" ofType:nil];
+	NSString *html = [NSString stringWithContentsOfFile:readmePath encoding:NSUTF8StringEncoding error:NULL];
+    
+    NSString *path = [OCPDFGenerator generatePDFFromHTMLString:html];
+    
+    NSLog(@"FileExists:%d", [[NSFileManager defaultManager] fileExistsAtPath:path]);
+    
+    NSURL *targetURL = [NSURL fileURLWithPath:path];
+    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
+    [webView loadRequest:request];
+    
+    [self.view addSubview:webView];
+    [webView release];
+	
+}
 
 - (void)viewDidLoad
 {
