@@ -17,6 +17,19 @@
 		B10FF5711516E22C0063355F /* OCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B10FF56F1516E22C0063355F /* OCViewController.xib */; };
 		B10FF5791516E2710063355F /* OCPDFGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B10FF5781516E2710063355F /* OCPDFGenerator.m */; };
 		B10FF57B1516E2E40063355F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B10FF57A1516E2E40063355F /* CoreText.framework */; };
+		B1302334151A5212008FD765 /* test2.md in Resources */ = {isa = PBXBuildFile; fileRef = B1302333151A5212008FD765 /* test2.md */; };
+		B1302335151A52B9008FD765 /* setup.c in Sources */ = {isa = PBXBuildFile; fileRef = B1302326151A515A008FD765 /* setup.c */; };
+		B1302336151A52B9008FD765 /* tags.c in Sources */ = {isa = PBXBuildFile; fileRef = B1302328151A515A008FD765 /* tags.c */; };
+		B1302337151A52B9008FD765 /* html5.c in Sources */ = {isa = PBXBuildFile; fileRef = B1302329151A515A008FD765 /* html5.c */; };
+		B1302338151A52B9008FD765 /* emmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = B130232A151A515A008FD765 /* emmatch.c */; };
+		B1302339151A52B9008FD765 /* Csio.c in Sources */ = {isa = PBXBuildFile; fileRef = B130232B151A515A008FD765 /* Csio.c */; };
+		B130233A151A52B9008FD765 /* xml.c in Sources */ = {isa = PBXBuildFile; fileRef = B130232C151A515A008FD765 /* xml.c */; };
+		B130233B151A52B9008FD765 /* resource.c in Sources */ = {isa = PBXBuildFile; fileRef = B130232D151A515A008FD765 /* resource.c */; };
+		B130233C151A52B9008FD765 /* generate.c in Sources */ = {isa = PBXBuildFile; fileRef = B130232E151A515A008FD765 /* generate.c */; };
+		B130233D151A52B9008FD765 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B130232F151A515A008FD765 /* markdown.c */; };
+		B130233E151A52B9008FD765 /* mkdio.c in Sources */ = {isa = PBXBuildFile; fileRef = B1302331151A515A008FD765 /* mkdio.c */; };
+		B130233F151A52B9008FD765 /* NSString+GHMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1302320151A514B008FD765 /* NSString+GHMarkdownParser.m */; };
+		B1302340151A52B9008FD765 /* GHMarkdownParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B1302322151A514B008FD765 /* GHMarkdownParser.m */; };
 		B1D66A501516E61F00623D3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1D66A4F1516E61F00623D3C /* QuartzCore.framework */; };
 		B1D66AAD1516EBF400623D3C /* CGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D66A5F1516EBF400623D3C /* CGUtils.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		B1D66AAE1516EBF400623D3C /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = B1D66A601516EBF400623D3C /* default.css */; };
@@ -94,6 +107,29 @@
 		B10FF5771516E2710063355F /* OCPDFGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPDFGenerator.h; sourceTree = "<group>"; };
 		B10FF5781516E2710063355F /* OCPDFGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCPDFGenerator.m; sourceTree = "<group>"; };
 		B10FF57A1516E2E40063355F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B130231F151A514B008FD765 /* NSString+GHMarkdownParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+GHMarkdownParser.h"; sourceTree = "<group>"; };
+		B1302320151A514B008FD765 /* NSString+GHMarkdownParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GHMarkdownParser.m"; sourceTree = "<group>"; };
+		B1302321151A514B008FD765 /* GHMarkdownParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHMarkdownParser.h; sourceTree = "<group>"; };
+		B1302322151A514B008FD765 /* GHMarkdownParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHMarkdownParser.m; sourceTree = "<group>"; };
+		B1302324151A515A008FD765 /* blocktags */ = {isa = PBXFileReference; lastKnownFileType = text; path = blocktags; sourceTree = "<group>"; };
+		B1302325151A515A008FD765 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B1302326151A515A008FD765 /* setup.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = setup.c; sourceTree = "<group>"; };
+		B1302327151A515A008FD765 /* tags.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tags.h; sourceTree = "<group>"; };
+		B1302328151A515A008FD765 /* tags.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tags.c; sourceTree = "<group>"; };
+		B1302329151A515A008FD765 /* html5.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = html5.c; sourceTree = "<group>"; };
+		B130232A151A515A008FD765 /* emmatch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = emmatch.c; sourceTree = "<group>"; };
+		B130232B151A515A008FD765 /* Csio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Csio.c; sourceTree = "<group>"; };
+		B130232C151A515A008FD765 /* xml.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = xml.c; sourceTree = "<group>"; };
+		B130232D151A515A008FD765 /* resource.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = resource.c; sourceTree = "<group>"; };
+		B130232E151A515A008FD765 /* generate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = generate.c; sourceTree = "<group>"; };
+		B130232F151A515A008FD765 /* markdown.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
+		B1302330151A515A008FD765 /* markdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		B1302331151A515A008FD765 /* mkdio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mkdio.c; sourceTree = "<group>"; };
+		B1302332151A515A008FD765 /* mkdio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mkdio.h; sourceTree = "<group>"; };
+		B1302333151A5212008FD765 /* test2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test2.md; sourceTree = "<group>"; };
+		B1302341151A52F9008FD765 /* cstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cstring.h; sourceTree = "<group>"; };
+		B1302342151A530E008FD765 /* amalloc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = amalloc.c; sourceTree = "<group>"; };
+		B1302343151A530E008FD765 /* amalloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = amalloc.h; sourceTree = "<group>"; };
 		B1D66A4F1516E61F00623D3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B1D66A5E1516EBF400623D3C /* CGUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGUtils.h; sourceTree = "<group>"; };
 		B1D66A5F1516EBF400623D3C /* CGUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGUtils.m; sourceTree = "<group>"; };
@@ -237,8 +273,9 @@
 				B10FF56D1516E22C0063355F /* OCViewController.m */,
 				B10FF5771516E2710063355F /* OCPDFGenerator.h */,
 				B10FF5781516E2710063355F /* OCPDFGenerator.m */,
-				B1D66A5D1516EBF400623D3C /* DTCoreText */,
 				B10FF56F1516E22C0063355F /* OCViewController.xib */,
+				B130231E151A512D008FD765 /* GHMarkdownParser */,
+				B1D66A5D1516EBF400623D3C /* DTCoreText */,
 				B10FF5611516E22C0063355F /* Supporting Files */,
 			);
 			path = OCPDFGen;
@@ -247,6 +284,7 @@
 		B10FF5611516E22C0063355F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1302333151A5212008FD765 /* test2.md */,
 				B1D66AD91516ECC500623D3C /* test.html */,
 				B10FF5621516E22C0063355F /* OCPDFGen-Info.plist */,
 				B10FF5631516E22C0063355F /* InfoPlist.strings */,
@@ -254,6 +292,43 @@
 				B10FF5681516E22C0063355F /* OCPDFGen-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B130231E151A512D008FD765 /* GHMarkdownParser */ = {
+			isa = PBXGroup;
+			children = (
+				B1302323151A514E008FD765 /* discount */,
+				B130231F151A514B008FD765 /* NSString+GHMarkdownParser.h */,
+				B1302320151A514B008FD765 /* NSString+GHMarkdownParser.m */,
+				B1302321151A514B008FD765 /* GHMarkdownParser.h */,
+				B1302322151A514B008FD765 /* GHMarkdownParser.m */,
+			);
+			name = GHMarkdownParser;
+			sourceTree = "<group>";
+		};
+		B1302323151A514E008FD765 /* discount */ = {
+			isa = PBXGroup;
+			children = (
+				B1302324151A515A008FD765 /* blocktags */,
+				B1302342151A530E008FD765 /* amalloc.c */,
+				B1302343151A530E008FD765 /* amalloc.h */,
+				B1302325151A515A008FD765 /* config.h */,
+				B1302326151A515A008FD765 /* setup.c */,
+				B1302327151A515A008FD765 /* tags.h */,
+				B1302328151A515A008FD765 /* tags.c */,
+				B1302341151A52F9008FD765 /* cstring.h */,
+				B1302329151A515A008FD765 /* html5.c */,
+				B130232A151A515A008FD765 /* emmatch.c */,
+				B130232B151A515A008FD765 /* Csio.c */,
+				B130232C151A515A008FD765 /* xml.c */,
+				B130232D151A515A008FD765 /* resource.c */,
+				B130232E151A515A008FD765 /* generate.c */,
+				B130232F151A515A008FD765 /* markdown.c */,
+				B1302330151A515A008FD765 /* markdown.h */,
+				B1302331151A515A008FD765 /* mkdio.c */,
+				B1302332151A515A008FD765 /* mkdio.h */,
+			);
+			name = discount;
 			sourceTree = "<group>";
 		};
 		B1D66A5D1516EBF400623D3C /* DTCoreText */ = {
@@ -399,6 +474,7 @@
 				B10FF5711516E22C0063355F /* OCViewController.xib in Resources */,
 				B1D66AAE1516EBF400623D3C /* default.css in Resources */,
 				B1D66ADA1516ECC500623D3C /* test.html in Resources */,
+				B1302334151A5212008FD765 /* test2.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +485,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1302335151A52B9008FD765 /* setup.c in Sources */,
+				B1302336151A52B9008FD765 /* tags.c in Sources */,
+				B1302337151A52B9008FD765 /* html5.c in Sources */,
+				B1302338151A52B9008FD765 /* emmatch.c in Sources */,
+				B1302339151A52B9008FD765 /* Csio.c in Sources */,
+				B130233A151A52B9008FD765 /* xml.c in Sources */,
+				B130233B151A52B9008FD765 /* resource.c in Sources */,
+				B130233C151A52B9008FD765 /* generate.c in Sources */,
+				B130233D151A52B9008FD765 /* markdown.c in Sources */,
+				B130233E151A52B9008FD765 /* mkdio.c in Sources */,
+				B130233F151A52B9008FD765 /* NSString+GHMarkdownParser.m in Sources */,
+				B1302340151A52B9008FD765 /* GHMarkdownParser.m in Sources */,
 				B1D66AE21516F0B500623D3C /* default.css in Sources */,
 				B10FF5671516E22C0063355F /* main.m in Sources */,
 				B10FF56B1516E22C0063355F /* OCAppDelegate.m in Sources */,

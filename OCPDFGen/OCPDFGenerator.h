@@ -13,5 +13,6 @@
 +(NSString *)generatePDFFromAttributedString:(NSAttributedString *)str;
 +(NSString *)generatePDFFromNSString:(NSString *)str;
 +(NSString *)generatePDFFromHTMLString:(NSString *)str;
++(NSString *)generatePDFFromMarkDownString:(NSString *)md;
 
 @end

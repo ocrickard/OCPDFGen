@@ -9,6 +9,7 @@
 #import "OCPDFGenerator.h"
 #import <CoreText/CoreText.h>
 #import "DTCoreText/DTCoreText.h"
+#import "NSString+GHMarkdownParser.h"
 
 @implementation OCPDFGenerator
 
@@ -42,6 +43,7 @@
     
     int CURRENT_TOP_MARGIN = TOP_MARGIN;
     
+    //You can make the first page have a different top margin to place headers, etc.
     int FIRST_PAGE_TOP_MARGIN = TOP_MARGIN;
     
     CGRect a4Page = CGRectMake(0, 0, DOC_WIDTH, DOC_HEIGHT);
@@ -63,9 +65,7 @@
     CGContextSelectFont (context, [font cStringUsingEncoding:NSUTF8StringEncoding], fontSize, kCGEncodingMacRoman);                                                 
     CGContextSetFillColorWithColor(context, [color CGColor]);
     // Initialize an attributed string.
-//    CFMutableAttributedStringRef attrString = CFAttributedStringCreateMutable(kCFAllocatorDefault, 0);
     CFAttributedStringRef attrString = (CFAttributedStringRef)str;
-//    CFAttributedStringReplaceString (attrString, currentRange, (CFStringRef)content);
     
     // Create the framesetter with the attributed string.
     CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString(attrString);
@@ -140,7 +140,12 @@
 	
 	NSAttributedString *string = [[NSAttributedString alloc] initWithHTML:data options:options documentAttributes:NULL];
     
-    return [self generatePDFFromAttributedString:string];
+    return [self generatePDFFromAttributedString:[string autorelease]];
+}
+
++(NSString *)generatePDFFromMarkDownString:(NSString *)md {
+    NSString *html = md.HTMLStringFromMarkdown;
+    return [self generatePDFFromHTMLString:html];
 }
 
 @end
