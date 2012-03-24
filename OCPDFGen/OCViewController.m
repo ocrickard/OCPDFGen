@@ -24,16 +24,16 @@
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
     //Use the below code for HTML
-//    NSString *readmePath = [[NSBundle mainBundle] pathForResource:@"test.html" ofType:nil];
-//	NSString *html = [NSString stringWithContentsOfFile:readmePath encoding:NSUTF8StringEncoding error:NULL];
-//    
-//    NSString *path = [OCPDFGenerator generatePDFFromHTMLString:html];
+    NSString *readmePath = [[NSBundle mainBundle] pathForResource:@"test.html" ofType:nil];
+	NSString *html = [NSString stringWithContentsOfFile:readmePath encoding:NSUTF8StringEncoding error:NULL];
+    
+    NSString *path = [OCPDFGenerator generatePDFFromHTMLString:html];
     
     //This is for Markdown
-    NSString *readmePath = [[NSBundle mainBundle] pathForResource:@"test2.md" ofType:nil];
-	NSString *md = [NSString stringWithContentsOfFile:readmePath encoding:NSUTF8StringEncoding error:NULL];
-    
-    NSString *path = [OCPDFGenerator generatePDFFromMarkDownString:md];
+//    NSString *readmePath = [[NSBundle mainBundle] pathForResource:@"test2.md" ofType:nil];
+//	NSString *md = [NSString stringWithContentsOfFile:readmePath encoding:NSUTF8StringEncoding error:NULL];
+//    
+//    NSString *path = [OCPDFGenerator generatePDFFromMarkDownString:md];
     
     NSLog(@"FileExists:%d", [[NSFileManager defaultManager] fileExistsAtPath:path]);
     
