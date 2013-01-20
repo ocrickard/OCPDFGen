@@ -108,7 +108,9 @@
             
             CFRelease(frame);       
         }
-        
+		
+		CFRelease(path);
+
         // If we're at the end of the text, exit the loop.
         if (currentRange.location == CFAttributedStringGetLength((CFAttributedStringRef)attrString))
             done = YES;
